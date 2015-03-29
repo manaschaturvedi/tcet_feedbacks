@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	font-family: Verdana;
+	font-size:12px;
+}
+#heading h3{
+	color: #000;
+	margin-top: 0px;
+	margin-left: 335px;
+	/*border: 2px solid black;*/
+	margin-right: 68px;
+	
+}
+#left p{
+	color: #000;
+	margin-top: 0px;
+	font-weight: bold;
+	/*border: 2px solid black;*/
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 429px;
+	display: block;
+}
+#right p{
+	color: #000;
+	/*border: 2px solid black;*/
+	font-weight: bold;
+	display: block;
+	margin-left: 700px;
+	margin-top: -35px;
+}
+#bottom{
+	color: #000;
+	/*border: 2px solid black;*/
+	margin-left: 473px;		
+}
+#bottom-left p{
+	color: #000;
+	margin-top: 0px;
+	font-weight: bold;
+	/*border: 2px solid black;*/
+	margin-bottom: 0px;
+	margin-left: 20px;
+	display: block;
+}
+#bottom-middle p{
+	color: #000;
+	font-weight: bold;
+	/* border: 2px solid black;*/
+	margin-left: 256px;
+	margin-top: -12px;
+	display: block;
+	top: -18px;
+	position: relative;
+	left: -11px;
+}
+#second-last p{
+	color: #000;
+	font-weight: bold;
+	/*border: 2px solid black;*/
+	margin-left: 488px;
+	margin-top: -44px;
+	display: block;
+	top: -44px;
+	left: 22px;
+}
+#bottom-right p{
+	color: #000;
+	font-weight: bold;
+	/*border: 2px solid black;*/
+	margin-left: 735px;
+	margin-top: -18px;
+	display: block;
+	top: -12px;
+	left: 12px;
+	position: relative;
+	padding-top: 4px;
+}
+#heading{
+	font-family:Arial;
+	font-size:18px;
+
+}

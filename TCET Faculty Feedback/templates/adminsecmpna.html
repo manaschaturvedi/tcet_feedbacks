@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+    <title>TCET Feedback</title>
+
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	<script>function printDiv(divName) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
+}
+</script>
+
+<link type="text/css" rel="stylesheet" href="stylesheets/admin.css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/drilldown.js"></script>
+<script src="http://code.highcharts.com/highcharts-3d.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+</head>
+
+<body>
+<div id="printableArea">
+<img src="extra/header.png" style="height:80px; width:100%"/>   
+<div id="left">
+<p>TCET/FRM/MP-07/02</p>
+<p>Date: 01/09/2014</p>
+
+</div>
+<div id="right">
+
+<p>Revision A<br/>
+Academic Year: 2014-2015</p>
+
+
+</div>
+
+
+<div id="heading">
+<h3>Students feedback about faculty (SE CMPN A)</h3>
+</div>
+            <table border=1 cellspacing=0 cellpadding=0>
+
+  <tr>
+    <th>Sr. No.<br></th>
+    <th><br>Particulars of feedback<br></th>
+    <th>Vinita Gupta (AM)</th>
+    <th>Ravindra Patil (ECCF)</th>
+    <th>Sanjay Sharma (DS)</th>
+    <th>Rekha Sharma(DIS)</th>
+	<th>Jesal Joshi (DIS)</th>
+    <th>Anand Khandare (OOPM)</th>
+	<th>Bidisha Acharjee(DLDA)</th>
+  </tr>
+  <tr>
+    <td>6.1</td>
+    <td>Depth of subject knowledge</td>
+    <td>{{q1_clarity}}</td>
+    <td>{{q1_utility}}</td>
+    <td>{{q1_guidance}}</td>
+    <td>{{q1_process}}</td>
+	<td>{{q1_processsea}}</td>
+    <td>{{q1_resource}}</td>
+	<td>{{q1_resourcee}}</td>
+  </tr>
+  <tr>
+    <td>6.2</td>
+    <td>Ability to explain &amp; clarity of concepts</td>
+    <td>{{q2_clarity}}</td>
+    <td>{{q2_utility}}</td>
+    <td>{{q2_guidance}}</td>
+    <td>{{q2_process}}</td>
+	<td>{{q2_processsea}}</td>
+    <td>{{q2_resource}}</td>
+	<td>{{q2_resourcee}}</td>
+  </tr>
+  <tr>
+    <td>6.3</td>
+    <td>Punctuality and Regularity</td>
+    <td>{{q3_clarity}}</td>
+    <td>{{q3_utility}}</td>
+    <td>{{q3_guidance}}</td>
+    <td>{{q3_process}}</td>
+	<td>{{q3_processsea}}</td>
+    <td>{{q3_resource}}</td>
+	<td>{{q3_resourcee}}</td>
+  </tr>
+  <tr>
+    <td>6.4</td>
+    <td>Lecture Pace</td>
+    <td>{{q4_clarity}}</td>
+    <td>{{q4_utility}}</td>
+    <td>{{q4_guidance}}</td>
+    <td>{{q4_process}}</td>
+	<td>{{q4_processsea}}</td>
+    <td>{{q4_resource}}</td>
+	<td>{{q4_resourcee}}</td>
+  </tr>
+  <tr>
+    <td>6.5</td>
+    <td>Use of course material viz. course module, question bank,handouts during lecture/tutorial</td>
+    <td>{{q5_clarity}}</td>
+    <td>{{q5_utility}}</td>
+    <td>{{q5_guidance}}</td>
+    <td>{{q5_process}}</td>
+	<td>{{q5_processsea}}</td>
+    <td>{{q5_resource}}</td>
+	<td>{{q5_resourcee}}</td>
+  </tr>
+  <tr>
+    <td>6.6</td>
+    <td>Style of presentation, communication skills &amp;innovative teaching methods</td>
+    <td>{{q6_clarity}}</td>
+    <td>{{q6_utility}}</td>
+    <td>{{q6_guidance}}</td>
+    <td>{{q6_process}}</td>
+	<td>{{q6_processsea}}</td>
+    <td>{{q6_resource}}</td>
+	<td>{{q6_resourcee}}</td>
+  </tr>
+  <tr>
+    <td>6.7</td>
+    <td>Ability to hold student's attention &amp; command of class</td>
+    <td>{{q7_clarity}}</td>
+    <td>{{q7_utility}}</td>
+    <td>{{q7_guidance}}</td>
+    <td>{{q7_process}}</td>
+	<td>{{q7_processsea}}</td>
+    <td>{{q7_resource}}</td>
+	<td>{{q7_resourcee}}</td>
+  </tr>
+  <tr>
+    <td>6.8</td>
+    <td>Effective utilization of lecture/practical time for teaching</td>
+    <td>{{q8_clarity}}</td>
+    <td>{{q8_utility}}</td>
+    <td>{{q8_guidance}}</td>
+    <td>{{q8_process}}</td>
+	<td>{{q8_processsea}}</td>
+    <td>{{q8_resource}}</td>
+	<td>{{q8_resourcee}}</td>
+  </tr>
+  <tr>
+    <td>6.9</td>
+    <td>Ability to invoke participation &amp; cultivation of learning habits</td>
+    <td>{{q9_clarity}}</td>
+    <td>{{q9_utility}}</td>
+    <td>{{q9_guidance}}</td>
+    <td>{{q9_process}}</td>
+	<td>{{q9_processsea}}</td>
+    <td>{{q9_resource}}</td>
+	<td>{{q9_resourcee}}</td>
+  </tr>
+  <tr>
+    <td>6.10</td>
+    <td>Syllabus Coverage</td>
+    <td>{{q10_clarity}}</td>
+    <td>{{q10_utility}}</td>
+    <td>{{q10_guidance}}</td>
+    <td>{{q10_process}}</td>
+	<td>{{q10_processsea}}</td>
+    <td>{{q10_resource}}</td>
+	<td>{{q10_resourcee}}</td>
+  </tr>
+  <tr>
+    <td>6.11</td>
+    <td>Faculty involvement with students<br>a) Guidance for developing writing skill viz. experiments,assignments, examination paper, revision, question bank etc.<br>b) Involvement of teacher with students through projects/ student seminars / case material, knowledge sharing</td>
+    <td>{{q11_clarity}}</td>
+    <td>{{q11_utility}}</td>
+    <td>{{q11_guidance}}</td>
+    <td>{{q11_process}}</td>
+	<td>{{q11_processsea}}</td>
+    <td>{{q11_resource}}</td>
+	<td>{{q11_resourcee}}</td>
+  </tr>
+  <tr>
+    <td>6.12</td>
+    <td>Rapport with students, Counseling/ Guidance</td>
+    <td>{{q12_clarity}}</td>
+    <td>{{q12_utility}}</td>
+    <td>{{q12_guidance}}</td>
+    <td>{{q12_process}}</td>
+	<td>{{q12_processsea}}</td>
+    <td>{{q12_resource}}</td>
+	<td>{{q12_resourcee}}</td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>Total</b></td>                          
+    <td>{{total_clarity}}</td>
+    <td>{{total_utility}}</td>
+    <td>{{total_guidance}}</td>
+    <td>{{total_process}}</td>
+	<td>{{total_processsea}}</td>
+    <td>{{total_resource}}</td>
+	<td>{{total_resourcee}}</td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>Percentage</b></td>
+                                        
+    <td>{{per_clarity}}%</td>
+    <td>{{per_utility}}%</td>
+    <td>{{per_guidance}}%</td>
+    <td>{{per_process}}%</td>
+	<td>{{per_processsea}}%</td>
+    <td>{{per_resource}}%</td>
+	<td>{{per_resourcee}}%</td>
+  </tr>
+</table>
+     <p><b>Remarks: _______________________________________________________________________________________________________</b></p>    
+	<br/>
+	<div id="bottom-left">
+		<p>Mr Kiran Bhandari</p>
+		<p>Deputy HOD-CMPN</p>
+	</div>
+	
+	<div id="bottom-middle">
+		<p>Dr Rekha Sharma</p>
+		<p> HOD-CMPN</p>
+	</div>
+	
+   <div id="second-last">
+    	<p>Dean Academics</p>
+    	<p>Dr. R.R. Sedamkar</p>  
+    </div>
+	
+    <div id="bottom-right">
+    	<p>Dr. B.K. Mishra</p>
+        <p>PRINCIPAL</p>
+    	
+        
+    </div>
+    <br/>
+	</div><input type="button" onclick="printDiv('printableArea')" value="PRINT ANALYSIS SHEET" />		
+	
+	<hr>
+<div id="printableArea2">	
+	<h3 id="heading">Graphical Analysis</h3>
+
+		<div id="container33" style="width: 700px; height: 400px"></div>
+
+<script type="text/javascript">
+$(function () {
+    $('#container33').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'SE CMPN A feedback analysis'
+        },
+        subtitle: {
+            text: 'Source: CloudClovis.com'
+        },
+        xAxis: {
+            categories: [
+                'AM(VG)',
+                'ECCF(RP)',
+                'DS(SNS)',
+                'DIS(RS)',
+				'DIS(JJ)',
+                'OOPM(AK)',
+				'DLDA(BA)'
+            ]
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Average (%)'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Average',
+            data: [{{per_clarity}}, {{per_utility}}, {{per_guidance}}, {{per_process}},{{per_processsea}},{{per_resource}},{{per_resourcee}}]
+
+        }]
+    });
+});
+	</script>
+	</div><input type="button" onclick="printDiv('printableArea2')" value="PRINT GRAPH" />
+<hr/>
+</body>
+
+</html>

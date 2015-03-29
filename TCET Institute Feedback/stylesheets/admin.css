@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	font-family: Verdana;
+	font-size:14px;
+}
+#heading h2{
+	color: #000;
+	margin-top: 10px;
+	margin-left: 255px;
+	/*border: 2px solid black;*/
+	margin-right: 68px;
+	
+}
+#left p{
+	color: #000;
+	margin-top: 0px;
+	font-weight: bold;
+	/*border: 2px solid black;*/
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 429px;
+	display: block;
+}
+#right p{
+	color: #000;
+	/*border: 2px solid black;*/
+	font-weight: bold;
+	display: block;
+	margin-left: 606px;
+	margin-top: -40px;
+}
+#bottom-left p{
+	color: #000;
+	/*border: 2px solid black;*/
+	margin-left: 43px;
+	margin-top: -13px;
+	top: 29px;
+	position: relative;
+	font-weight: bold;
+}
+#bottom-left1 p{
+	color: #000;
+	/*border: 2px solid black;*/
+	margin-left: 43px;
+	margin-top: -14px;
+	top: -7px;
+	position: relative;
+	font-weight: bold;
+	left: 182px;
+}
+#bottom-left2 p{
+	color: #000;
+	/*border: 2px solid black;*/
+	margin-left: 44px;
+	margin-top: -14px;
+	top: -39px;
+	position: relative;
+	font-weight: bold;
+	left: 356px;
+}
+#bottom-left3 p{
+	color: #000;
+	/*border: 2px solid black;*/
+	margin-left: 44px;
+	margin-top: -14px;
+	top: -70px;
+	position: relative;
+	font-weight: bold;
+	left: 560px;
+}
+#heading{
+	font-family:Arial;
+	font-size:18px;
+
+}

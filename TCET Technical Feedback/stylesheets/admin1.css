@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+#heading h2{
+	color: #000;
+	margin-top: 10px;
+	margin-left: 105px;
+	/*border: 2px solid black;*/
+	margin-right: 68px;
+	
+}
+#left p{
+	color: #000;
+	margin-top: 0px;
+	font-weight: bold;
+	/*border: 2px solid black;*/
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 429px;
+	display: block;
+}
+#right p{
+	color: #000;
+	/*border: 2px solid black;*/
+	font-weight: bold;
+	display: block;
+	margin-left: 482px;
+	margin-top: -47px;
+}
+#bottom{
+	color: #000;
+	/*border: 2px solid black;*/
+	margin-left: 530px;	
+	
+	
+}

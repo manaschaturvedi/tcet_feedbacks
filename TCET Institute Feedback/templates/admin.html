@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<style>
+	td {text-align: center;vertical-align: middle;}
+	</style>
+    <title>TCET Feedback</title>
+ <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	<script>function printDiv(divName) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
+}</script>
+ <link type="text/css" rel="stylesheet" href="stylesheets/admin.css"/>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/drilldown.js"></script>
+<script src="http://code.highcharts.com/highcharts-3d.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+</head>
+
+<body>
+<div id="printableArea">
+<img src="extra/header.png" style="width:860px; height:100px"/>   
+
+<div id="left">
+<p>TCET/FRM/MP-07/04</p>
+<p>Date: 01/09/2014</p>
+
+</div>
+<div id="right">
+
+<p>Revision A<br/>
+Academic Year: 2014-2015</p>
+
+
+</div>
+
+
+<div id="heading">
+<h2>Feedback Analysis of Institute- CMPN</h2>
+</div>
+   
+
+   
+            <table border=1 cellspacing=0 cellpadding=0>
+
+  <tr>
+    <th><b>Sr. No.</b></th>
+    <th><b>Parameters</b></th>
+    <th colspan="6"><b>Level Of Satisfaction</b></th>
+  </tr>
+
+
+  <tr>
+    <td><b>1</b></td>
+    <td><b>Classroom Condition</b></td>
+    <td><b>SE CMPN&nbsp;A&nbsp;</b></td>
+    <td><b>SE CMPN&nbsp;B&nbsp;</b></td>
+    <td><b>TE CMPN&nbsp;A&nbsp;</b></td>
+    <td><b>TE CMPN&nbsp;B&nbsp;</b></td>
+    <td><b>BE CMPN&nbsp;A&nbsp;</b></td>
+    <td><b>BE CMPN&nbsp;B&nbsp;</b></td>
+  </tr>
+  <tr>
+    <td>1.1</td>
+    <td>Condition of Furniture &amp; Fittings</td>
+    <td>{{q1_condff}}</td>
+    <td>{{q1_condffseb}}</td>
+    <td>{{q1_condfftea}}</td>
+    <td>{{q1_condffteb}}</td>
+    <td>{{q1_condffbea}}</td>
+    <td>{{q1_condffbeb}}</td>
+  </tr>
+  <tr>
+    <td>1.2</td>
+    <td>Lighting</td>
+    <td>{{q1_light}}</td>
+    <td>{{q1_lightseb}}</td>
+    <td>{{q1_lighttea}}</td>
+    <td>{{q1_lightteb}}</td>
+    <td>{{q1_lightbea}}</td>
+    <td>{{q1_lightbeb}}</td>
+  </tr>
+  <tr>
+    <td>1.3</td>
+    <td>Air Ventilation</td>
+    <td>{{q1_ac}}</td>
+    <td>{{q1_acseb}}</td>
+    <td>{{q1_actea}}</td>
+    <td>{{q1_acteb}}</td>
+    <td>{{q1_acbea}}</td>
+    <td>{{q1_acbeb}}</td>
+  </tr>
+  <tr>
+    <td>1.4</td>
+    <td>Cleanliness</td>
+    <td>{{q1_clean}}</td>
+    <td>{{q1_cleanseb}}</td>
+    <td>{{q1_cleantea}}</td>
+    <td>{{q1_cleanteb}}</td>
+    <td>{{q1_cleanbea}}</td>
+    <td>{{q1_cleanbeb}}</td>
+  </tr>
+  <tr>
+    <td><b>2</b></td>
+    <td><b>Laboratories</b></td>
+    <td colspan="6"></td>
+  </tr>
+  <tr>
+    <td>2.1</td>
+    <td>Equipment Availability</td>
+    <td>{{q2_eq_av}}</td>
+    <td>{{q2_eq_avseb}}</td>
+    <td>{{q2_eq_avtea}}</td>
+    <td>{{q2_eq_avteb}}</td>
+    <td>{{q2_eq_avbea}}</td>
+    <td>{{q2_eq_avbeb}}</td>
+  </tr>
+  <tr>
+    <td>2.2</td>
+    <td>Software Availability</td>
+    <td>{{q2_s_a}}</td>
+    <td>{{q2_s_aseb}}</td>
+    <td>{{q2_s_atea}}</td>
+    <td>{{q2_s_ateb}}</td>
+    <td>{{q2_s_abea}}</td>
+    <td>{{q2_s_abeb}}</td>
+  </tr>
+  <tr>
+    <td>2.3</td>
+    <td>Computers Availability</td>
+    <td>{{q2_c_a}}</td>
+    <td>{{q2_c_aseb}}</td>
+    <td>{{q2_c_atea}}</td>
+    <td>{{q2_c_ateb}}</td>
+    <td>{{q2_c_abea}}</td>
+    <td>{{q2_c_abeb}}</td>
+  </tr>
+  <tr>
+    <td>2.4</td>
+    <td>Overall Lab Maintenance</td>
+    <td>{{q2_l_m}}</td>
+    <td>{{q2_l_mseb}}</td>
+    <td>{{q2_l_mtea}}</td>
+    <td>{{q2_l_mteb}}</td>
+    <td>{{q2_l_mbea}}</td>
+    <td>{{q2_l_mbeb}}</td>
+  </tr>
+  <tr>
+    <td>2.5</td>
+    <td>Internet Connectivity</td>
+    <td>{{q2_i_c}}</td>
+    <td>{{q2_i_cseb}}</td>
+    <td>{{q2_i_ctea}}</td>
+    <td>{{q2_i_cteb}}</td>
+    <td>{{q2_i_cbea}}</td>
+    <td>{{q2_i_cbeb}}</td>
+  </tr>
+  <tr>
+    <td>2.6</td>
+    <td>Behaviour of Staff</td>
+    <td>{{q2_b_s}}</td>
+    <td>{{q2_b_sseb}}</td>
+    <td>{{q2_b_stea}}</td>
+    <td>{{q2_b_steb}}</td>
+    <td>{{q2_b_sbea}}</td>
+    <td>{{q2_b_sbeb}}</td>
+  </tr>
+  <tr>
+    <td><b>3</b></td>
+    <td><b>Library</b></td>
+    <td colspan="6"></td>
+  </tr>
+  <tr>
+    <td>3.1</td>
+    <td>Availability of Books</td>
+    <td>{{q3_lib}}</td>
+    <td>{{q3_libseb}}</td>
+    <td>{{q3_libtea}}</td>
+    <td>{{q3_libteb}}</td>
+    <td>{{q3_libbea}}</td>
+    <td>{{q3_libbeb}}</td>
+  </tr>
+  <tr>
+    <td>3.2</td>
+    <td>Indexing and stacking</td>
+    <td>{{q3_i_s}}</td>
+    <td>{{q3_i_sseb}}</td>
+    <td>{{q3_i_stea}}</td>
+    <td>{{q3_i_steb}}</td>
+    <td>{{q3_i_sbea}}</td>
+    <td>{{q3_i_sbeb}}</td>
+  </tr>
+  <tr>
+    <td>3.3</td>
+    <td>Condition of books</td>
+    <td>{{q3_con_bo}}</td>
+    <td>{{q3_con_boseb}}</td>
+    <td>{{q3_con_botea}}</td>
+    <td>{{q3_con_boteb}}</td>
+    <td>{{q3_con_bobea}}</td>
+    <td>{{q3_con_bobeb}}</td>
+  </tr>
+  <tr>
+    <td>3.4</td>
+    <td>Availability of new versions</td>
+    <td>{{q3_av_ne_ver}}</td>
+    <td>{{q3_av_ne_verseb}}</td>
+    <td>{{q3_av_ne_vertea}}</td>
+    <td>{{q3_av_ne_verteb}}</td>
+    <td>{{q3_av_ne_verbea}}</td>
+    <td>{{q3_av_ne_verbeb}}</td>
+  </tr>
+  <tr>
+    <td>3.5</td>
+    <td>Reading room environment</td>
+    <td>{{q3_re_ro}}</td>
+    <td>{{q3_re_roseb}}</td>
+    <td>{{q3_re_rotea}}</td>
+    <td>{{q3_re_roteb}}</td>
+    <td>{{q3_re_robea}}</td>
+    <td>{{q3_re_robeb}}</td>
+  </tr>
+  <tr>
+    <td>3.6</td>
+    <td>Availability of journals/magazines</td>
+    <td>{{q3_j_m}}</td>
+    <td>{{q3_j_mseb}}</td>
+    <td>{{q3_j_mtea}}</td>
+    <td>{{q3_j_mteb}}</td>
+    <td>{{q3_j_mbea}}</td>
+    <td>{{q3_j_mbeb}}</td>
+  </tr>
+  <tr>
+    <td>3.7</td>
+    <td>Behaviour of staff</td>
+    <td>{{q3_sta}}</td>
+    <td>{{q3_staseb}}</td>
+    <td>{{q3_statea}}</td>
+    <td>{{q3_stateb}}</td>
+    <td>{{q3_stabea}}</td>
+    <td>{{q3_stabeb}}</td>
+  </tr>
+  <tr>
+    <td><b>4</b></td>
+    <td><b>Canteen</b></td>
+    <td colspan="6"></td>
+  </tr>
+  <tr>
+    <td>4.1</td>
+    <td>Hygiene &amp; Cleanliness</td>
+    <td>{{q4_hy_cl}}</td>
+    <td>{{q4_hy_clseb}}</td>
+    <td>{{q4_hy_cltea}}</td>
+    <td>{{q4_hy_clteb}}</td>
+    <td>{{q4_hy_clbea}}</td>
+    <td>{{q4_hy_clbeb}}</td>
+  </tr>
+  <tr>
+    <td>4.2</td>
+    <td>Menu Choices</td>
+    <td>{{q4_men}}</td>
+    <td>{{q4_menseb}}</td>
+    <td>{{q4_mentea}}</td>
+    <td>{{q4_menteb}}</td>
+    <td>{{q4_menbea}}</td>
+    <td>{{q4_menbeb}}</td>
+  </tr>
+  <tr>
+    <td>4.3</td>
+    <td>Pricing</td>
+    <td>{{q4_pri}}</td>
+    <td>{{q4_priseb}}</td>
+    <td>{{q4_pritea}}</td>
+    <td>{{q4_priteb}}</td>
+    <td>{{q4_pribea}}</td>
+    <td>{{q4_pribeb}}</td>
+  </tr>
+  <tr>
+    <td>4.4</td>
+    <td>Timely Delivery</td>
+    <td>{{q4_tim_del}}</td>
+    <td>{{q4_tim_delseb}}</td>
+    <td>{{q4_tim_deltea}}</td>
+    <td>{{q4_tim_delteb}}</td>
+    <td>{{q4_tim_delbea}}</td>
+    <td>{{q4_tim_delbeb}}</td>
+  </tr>
+  <tr>
+    <td>4.5</td>
+    <td>Service Quality</td>
+    <td>{{q4_ser_qua}}</td>
+    <td>{{q4_ser_quaseb}}</td>
+    <td>{{q4_ser_quatea}}</td>
+    <td>{{q4_ser_quateb}}</td>
+    <td>{{q4_ser_quabea}}</td>
+    <td>{{q4_ser_quabeb}}</td>
+  </tr>
+  <tr>
+    <td><b>5</b></td>
+    <td><b>Other Facilities/ Amenities</b></td>
+    <td colspan="6"></td>
+  </tr>
+  <tr>
+    <td>5.1</td>
+    <td>Response of Administrative Staff</td>
+    <td>{{q5_res_ad}}</td>
+    <td>{{q5_res_adseb}}</td>
+    <td>{{q5_res_adtea}}</td>
+    <td>{{q5_res_adteb}}</td>
+    <td>{{q5_res_adbea}}</td>
+    <td>{{q5_res_adbeb}}</td>
+  </tr>
+  <tr>
+    <td>5.2</td>
+    <td>Auditorium Availability</td>
+    <td>{{q5_aud}}</td>
+    <td>{{q5_audseb}}</td>
+    <td>{{q5_audtea}}</td>
+    <td>{{q5_audteb}}</td>
+    <td>{{q5_audbea}}</td>
+    <td>{{q5_audbeb}}</td>
+  </tr>
+  <tr>
+    <td>5.3</td>
+    <td>Games &amp; Sports</td>
+    <td>{{q5_gam}}</td>
+    <td>{{q5_gamseb}}</td>
+    <td>{{q5_gamtea}}</td>
+    <td>{{q5_gamteb}}</td>
+    <td>{{q5_gambea}}</td>
+    <td>{{q5_gambeb}}</td>
+  </tr>
+  <tr>
+    <td>5.4</td>
+    <td>Information Display</td>
+    <td>{{q5_info}}</td>
+    <td>{{q5_infoseb}}</td>
+    <td>{{q5_infotea}}</td>
+    <td>{{q5_infoteb}}</td>
+    <td>{{q5_infobea}}</td>
+    <td>{{q5_infobeb}}</td>
+  </tr>
+  <tr>
+    <td>5.5</td>
+    <td>Drinking Water</td>
+    <td>{{q5_dr}}</td>
+    <td>{{q5_drseb}}</td>
+    <td>{{q5_drtea}}</td>
+    <td>{{q5_drteb}}</td>
+    <td>{{q5_drbea}}</td>
+    <td>{{q5_drbeb}}</td>
+  </tr>
+  <tr>
+    <td>5.6</td>
+    <td>Toilet Facilities</td>
+    <td>{{q5_toi}}</td>
+    <td>{{q5_toiseb}}</td>
+    <td>{{q5_toitea}}</td>
+    <td>{{q5_toiteb}}</td>
+    <td>{{q5_toibea}}</td>
+    <td>{{q5_toibeb}}</td>
+  </tr>
+  <tr>
+    <td>5.7</td>
+    <td>Cleanliness</td>
+    <td>{{q5_clean}}</td>
+    <td>{{q5_cleanseb}}</td>
+    <td>{{q5_cleantea}}</td>
+    <td>{{q5_cleanteb}}</td>
+    <td>{{q5_cleanbea}}</td>
+    <td>{{q5_cleanbeb}}</td>
+  </tr>
+  <tr>
+    <td>5.8</td>
+    <td>Maintenance</td>
+    <td>{{q5_mai}}</td>
+    <td>{{q5_maiseb}}</td>
+    <td>{{q5_maitea}}</td>
+    <td>{{q5_maiteb}}</td>
+    <td>{{q5_maibea}}</td>
+    <td>{{q5_maibeb}}</td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>Total</b></td>
+    <td>{{total_sea}}</td>
+    <td>{{total_seb}}</td>
+    <td>{{total_tea}}</td>
+    <td>{{total_teb}}</td>
+    <td>{{total_bea}}</td>
+    <td>{{total_beb}}</td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>Percentage</b></td>
+    <td><b>{{per_sea}}%</b></td>
+    <td><b>{{per_seb}}%</b></td>
+    <td><b>{{per_tea}}%</b></td>
+    <td><b>{{per_teb}}%</b></td>
+    <td><b>{{per_bea}}%</b></td>
+    <td><b>{{per_beb}}%</b></td>
+  </tr>
+
+</table>
+	<br/>
+	Remarks:___________________________________________________________________________________________<br/>
+	___________________________________________________________________________________________________
+	<br>
+	<br>
+	<br>
+	<div id="bottom-left">
+		<p>Mr. Kiran Bhandari</p>
+        <p>Deputy HOD CMPN</p>
+	</div>
+	
+    <div id="bottom-left1">
+		<p>Dr. Rekha Sharma</p>
+        <p>HOD CMPN</p>
+	</div>
+    
+    <div id="bottom-left2">
+		<p>Dr. R.R. Sedamkar</p>
+        <p>Dean Academics</p>
+	</div>
+    
+    <div id="bottom-left3">
+		<p>Dr. B.K. Mishra</p>
+        <p>Principal</p>
+	</div>
+    
+	</div><input type="button" onclick="printDiv('printableArea')" value="PRINT THIS SHEET" />		
+	
+	<hr>
+<div id="printableArea2">	
+	<h3 id="heading">Graphical Analysis</h3>
+
+		<div id="container33" style="width: 700px; height: 400px"></div>
+
+<script type="text/javascript">
+$(function () {
+    $('#container33').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Institute feedback analysis-CMPN'
+        },
+        subtitle: {
+            text: 'Source: CloudClovis.com'
+        },
+        xAxis: {
+            categories: [
+                'SE CMPN A',
+                'SE CMPN B',
+                'TE CMPN A',
+                'TE CMPN B',
+                'BE CMPN A',
+				'BE CMPN B'
+            ]
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Average (%)'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Average',
+            data: [{{per_sea}}, {{per_seb}}, {{per_tea}}, {{per_teb}},{{per_bea}},{{per_beb}}]
+
+        }]
+    });
+});
+	</script>
+	</div><input type="button" onclick="printDiv('printableArea2')" value="PRINT GRAPH" />
+<hr/>
+</body>
+
+</html>

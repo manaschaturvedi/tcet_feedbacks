@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+    <title>TCET Feedback</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/freelancer.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="http://code.highcharts.com/modules/drilldown.js"></script>
+	 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	 
+<script>
+$(document).ready(function () {
+$('option[value={{clas}}]').attr('selected','selected');
+$('.1select option[value={{roll_no}}]').attr('selected','selected');
+$('.2select option[value={{semester}}]').attr('selected','selected');
+$('.3select option[value={{q11}}]').attr('selected','selected');
+$('.4select option[value={{q12}}]').attr('selected','selected');
+$('.5select option[value={{q13}}]').attr('selected','selected');
+$('.6select option[value={{q14}}]').attr('selected','selected');
+$('.7select option[value={{q15}}]').attr('selected','selected');
+$('.8select option[value={{q21}}]').attr('selected','selected');
+$('.9select option[value={{q22}}]').attr('selected','selected');
+$('.10select option[value={{q23}}]').attr('selected','selected');
+$('.11select option[value={{q24}}]').attr('selected','selected');
+$('.12select option[value={{q25}}]').attr('selected','selected');
+$('.13select option[value={{q31}}]').attr('selected','selected');
+$('.14select option[value={{q32}}]').attr('selected','selected');
+$('.15select option[value={{q33}}]').attr('selected','selected');
+$('.16select option[value={{q34}}]').attr('selected','selected');
+$('.17select option[value={{q35}}]').attr('selected','selected');
+$('.18select option[value={{q41}}]').attr('selected','selected');
+$('.19select option[value={{q42}}]').attr('selected','selected');
+$('.20select option[value={{q43}}]').attr('selected','selected');
+$('.21select option[value={{q44}}]').attr('selected','selected');
+$('.22select option[value={{q45}}]').attr('selected','selected');
+$('.23select option[value={{q51}}]').attr('selected','selected');
+$('.24select option[value={{q52}}]').attr('selected','selected');
+$('.25select option[value={{q53}}]').attr('selected','selected');
+$('.26select option[value={{q54}}]').attr('selected','selected');
+$('.27select option[value={{q55}}]').attr('selected','selected');
+$('.28select option[value={{q61}}]').attr('selected','selected');
+$('.29select option[value={{q62}}]').attr('selected','selected');
+$('.30select option[value={{q63}}]').attr('selected','selected');
+$('.31select option[value={{q64}}]').attr('selected','selected');
+$('.32select option[value={{q65}}]').attr('selected','selected');
+$('.33select option[value={{q71}}]').attr('selected','selected');
+$('.34select option[value={{q72}}]').attr('selected','selected');
+$('.35select option[value={{q73}}]').attr('selected','selected');
+$('.36select option[value={{q74}}]').attr('selected','selected');
+$('.37select option[value={{q75}}]').attr('selected','selected');
+$('.38select option[value={{q81}}]').attr('selected','selected');
+$('.39select option[value={{q82}}]').attr('selected','selected');
+$('.40select option[value={{q83}}]').attr('selected','selected');
+$('.41select option[value={{q84}}]').attr('selected','selected');
+$('.42select option[value={{q85}}]').attr('selected','selected');
+$('.43select option[value={{q91}}]').attr('selected','selected');
+$('.44select option[value={{q92}}]').attr('selected','selected');
+$('.45select option[value={{q93}}]').attr('selected','selected');
+$('.46select option[value={{q94}}]').attr('selected','selected');
+$('.47select option[value={{q95}}]').attr('selected','selected');
+$('.48select option[value={{q101}}]').attr('selected','selected');
+$('.49select option[value={{q102}}]').attr('selected','selected');
+$('.50select option[value={{q103}}]').attr('selected','selected');
+$('.51select option[value={{q104}}]').attr('selected','selected');
+$('.52select option[value={{q105}}]').attr('selected','selected');
+$('.53select option[value={{q111}}]').attr('selected','selected');
+$('.54select option[value={{q112}}]').attr('selected','selected');
+$('.55select option[value={{q113}}]').attr('selected','selected');
+$('.56select option[value={{q114}}]').attr('selected','selected');
+$('.57select option[value={{q115}}]').attr('selected','selected');
+$('.58select option[value={{q121}}]').attr('selected','selected');
+$('.59select option[value={{q122}}]').attr('selected','selected');
+$('.60select option[value={{q123}}]').attr('selected','selected');
+$('.61select option[value={{q124}}]').attr('selected','selected');
+$('.62select option[value={{q125}}]').attr('selected','selected');
+<!--validatiob for JJ column from below--->
+$('.63select option[value={{q1n}}]').attr('selected','selected');
+$('.64select option[value={{q2n}}]').attr('selected','selected');
+$('.65select option[value={{q3n}}]').attr('selected','selected');
+$('.66select option[value={{q4n}}]').attr('selected','selected');
+$('.67select option[value={{q5n}}]').attr('selected','selected');
+$('.68select option[value={{q6n}}]').attr('selected','selected');
+$('.69select option[value={{q7n}}]').attr('selected','selected');
+$('.70select option[value={{q8n}}]').attr('selected','selected');
+$('.71select option[value={{q9n}}]').attr('selected','selected');
+$('.72select option[value={{q10n}}]').attr('selected','selected');
+$('.73select option[value={{q11n}}]').attr('selected','selected');
+$('.74select option[value={{q12n}}]').attr('selected','selected');
+<!----validation for last column----->
+$('.75select option[value={{q16}}]').attr('selected','selected');
+$('.76select option[value={{q26}}]').attr('selected','selected');
+$('.77select option[value={{q36}}]').attr('selected','selected');
+$('.78select option[value={{q46}}]').attr('selected','selected');
+$('.79select option[value={{q56}}]').attr('selected','selected');
+$('.80select option[value={{q66}}]').attr('selected','selected');
+$('.81select option[value={{q76}}]').attr('selected','selected');
+$('.82select option[value={{q86}}]').attr('selected','selected');
+$('.83select option[value={{q96}}]').attr('selected','selected');
+$('.84select option[value={{q106}}]').attr('selected','selected');
+$('.85select option[value={{q116}}]').attr('selected','selected');
+$('.86select option[value={{q126}}]').attr('selected','selected');
+});
+</script>
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top"><b>FEEDBACK</b></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Questionnaire</a>
+                    </li>
+                    
+					
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="container">
+					<div class="intro-text">
+                        
+						<span class="skills">Department of Computer Engineering</span>
+						<span class="skills">Student Feedback 2014</span>
+						<span class="skills">SE CMPN A</span> 
+                    </div>
+               
+        </div>
+    </header>
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Questionnaire</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <br>
+			<br>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+                    <h4 style="color:red;">{{error_form}}</h4>
+						<form class="form-horizontal" role="form" method = "post">
+							   <div class="form-group">
+								  <label for="firstname" class="col-sm-1 control-label">Full-Name:</label>
+								  <div class="col-sm-10">
+									 <input type="text" class="form-control" id="firstname" 
+										placeholder="Name Surname" name = "name" value="{{name}}">
+								  </div>
+								</div>
+									
+								<div class="form-group">
+								  <label for="firstname" class="col-sm-1 control-label">Class:</label>
+								<div class="col-sm-2">
+									 <select class="form-control" name = "clas">
+										<option></option>
+										<option value="SE-A">SE-A</option>
+										<option value="SE-B">SE-B</option>
+										<option value="TE-A">TE-A</option>
+										<option value="TE-B">TE-B</option>
+										<option value="BE-A">BE-A</option>
+										<option value="BE-B">BE-B</option>
+									</select>
+								  </div>
+								  
+								  <label for="firstname" class="col-sm-2 control-label">Roll No:</label>
+								  <div class="col-sm-2">
+								   <select class="form-control 1select" name = "roll_no" value="{{roll_no}}">
+<option value=""> </option>								   
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+<option value="41">41</option>
+<option value="42">42</option>
+<option value="43">43</option>
+<option value="44">44</option>
+<option value="45">45</option>
+<option value="46">46</option>
+<option value="47">47</option>
+<option value="48">48</option>
+<option value="49">49</option>
+<option value="50">50</option>
+<option value="51">51</option>
+<option value="52">52</option>
+<option value="53">53</option>
+<option value="54">54</option>
+<option value="55">55</option>
+<option value="56">56</option>
+<option value="57">57</option>
+<option value="58">58</option>
+<option value="59">59</option>
+<option value="60">60</option>
+<option value="61">61</option>
+<option value="62">62</option>
+<option value="63">63</option>
+<option value="64">64</option>
+<option value="65">65</option>
+<option value="66">66</option>
+<option value="67">67</option>
+<option value="68">68</option>
+<option value="69">69</option>
+<option value="70">70</option>
+<option value="71">71</option>
+<option value="72">72</option>
+<option value="73">73</option>
+<option value="74">74</option>
+<option value="75">75</option>
+<option value="76">76</option>
+<option value="77">77</option>
+<option value="78">78</option>
+<option value="79">79</option>
+<option value="80">80</option>
+<option value="81">81</option>
+<option value="82">82</option>
+<option value="83">83</option>
+<option value="84">84</option>
+<option value="85">85</option>
+<option value="86">86</option>
+<option value="87">87</option>
+<option value="88">88</option>
+<option value="89">89</option>
+									</select>
+									 <!--<input type="text" class="form-control" id="firstname" 
+										placeholder="Enter roll no" name = "title">-->
+								  </div>
+                                  
+                               
+								  
+								  <label for="firstname" class="col-sm-2 control-label">Semester:</label>
+								  <div class="col-sm-2">
+									 <select class="form-control 2select" name = "semester">
+										<option> </option>
+										<option value="3">3</option>
+										<option value="5">5</option>
+										<option value="7">7</option>
+									</select>
+								  </div>
+								</div>
+								<br>
+								<hr>
+									<h4>Please ensure that all fields are filled before submitting your entry.</h4>	
+									<br>
+									<br>
+								  <div class="form-group">
+								  <table class="table table-bordered">
+<thead>
+  <tr>
+    <th class="col-md-1"rowspan="3">Sr. <br>No<br></th>
+    <th class="col-md-2"></th>
+    <th class="col-md-9" colspan="7">Level of Satisfaction (04 - 10)<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td></td><td></td>
+    <td>AM</td>
+    <td>ECCF</td>
+    <td>DS</td>
+    <td colspan="2">DIS</td>
+    <td>OOPM</td>
+	<td>DLDA</td>
+  </tr>
+  <tr>
+	<td></td>
+    <td>Particulars of feedback <br></td>
+    <td>VG</td>
+    <td>RP</td>
+    <td>SNS <br></td>
+    <td>RS</td>
+	<td>JJ</td>
+    <td>AK</td>
+	<td>BA</td>
+  </tr>
+  <tr>
+    <td>6.1</td>
+    <td>Depth of subject knowledge<br></td>
+    <td>
+	<div class="col-md-12">
+
+	 <select class="form-control 3select" name = "q11">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 4select" name = "q12">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 5select" name = "q13">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 6select" name = "q14">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-- NEW DROPDOWN BELOW. PLS MAKE ITS ENTRY IN THE DATABASE AS WELL DEFINE NEW NAMES TO IT-->	
+ <td>
+	<div class="col-md-12">
+	 <select class="form-control 63select" name = "q1n">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-----------------END--------------------> 	
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 7select" name = "q15">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+
+	<td>
+	<div class="col-md-12">
+
+	 <select class="form-control 75select" name = "q16">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+	
+  </tr>
+  <tr>
+    <td>6.2</td>
+    <td>Ability to explain &amp; clarity of&nbsp; concepts<br></td>
+    <td>
+	<div class="col-md-12">
+
+	 <select class="form-control 8select" name = "q21">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 9select" name = "q22">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 10select" name = "q23">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 11select" name = "q24">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+	
+	<!-- NEW DROPDOWN BELOW. PLS MAKE ITS ENTRY IN THE DATABASE AS WELL DEFINE NEW NAMES TO IT-->	
+ <td>
+	<div class="col-md-12">
+	 <select class="form-control 64select" name = "q2n">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-----------------END--------------------> 	
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 12select" name = "q25">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+	
+	<td>
+	<div class="col-md-12">
+
+	 <select class="form-control 76select" name = "q26">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+  </tr>
+  <tr>
+    <td>6.3</td>
+    <td>Punctuality and Regularity<br></td>
+    <td>
+	<div class="col-md-12">
+    
+            
+	 <select class="form-control 13select" name = "q31">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 14select" name = "q32">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 15select" name = "q33">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 16select" name = "q34">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-- NEW DROPDOWN BELOW. PLS MAKE ITS ENTRY IN THE DATABASE AS WELL DEFINE NEW NAMES TO IT-->	
+ <td>
+	<div class="col-md-12">
+	 <select class="form-control 65select" name = "q3n">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-----------------END--------------------> 	
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 17select" name = "q35">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+	<td>
+	<div class="col-md-12">
+
+	 <select class="form-control 77select" name = "q36">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+  </tr>
+  <tr>
+    <td>6.4<br></td>
+    <td>Lecture Pace<br></td>
+   <td>
+	<div class="col-md-12">
+
+           
+	 <select class="form-control 18select" name = "q41">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 19select" name = "q42">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 20select" name = "q43">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 21select" name = "q44">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-- NEW DROPDOWN BELOW. PLS MAKE ITS ENTRY IN THE DATABASE AS WELL DEFINE NEW NAMES TO IT-->	
+ <td>
+	<div class="col-md-12">
+	 <select class="form-control 66select" name = "q4n">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-----------------END--------------------> 	
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 22select" name = "q45">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+	<td>
+	<div class="col-md-12">
+
+	 <select class="form-control 78select" name = "q46">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+  </tr>
+  <tr>
+    <td>6.5</td>
+    <td>Use of course material viz. course module, question bank,<br>handouts during lecture/tutorial<br></td>
+    <td>
+	<div class="col-md-12">
+
+           
+	 <select class="form-control 23select" name = "q51">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 24select" name = "q52">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 25select" name = "q53">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 26select" name = "q54">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-- NEW DROPDOWN BELOW. PLS MAKE ITS ENTRY IN THE DATABASE AS WELL DEFINE NEW NAMES TO IT-->	
+ <td>
+	<div class="col-md-12">
+	 <select class="form-control 67select" name = "q5n">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-----------------END--------------------> 	
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 27select" name = "q55">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+	<td>
+	<div class="col-md-12">
+
+	 <select class="form-control 79select" name = "q56">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+  </tr>
+  <tr>
+    <td>6.6</td>
+    <td>Style of presentation, communication skills &amp;<br>innovative teaching methods<br></td>
+    <td>
+	<div class="col-md-12">
+
+	 <select class="form-control 28select" name = "q61">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 29select" name = "q62">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 30select" name = "q63">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 31select" name = "q64">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-- NEW DROPDOWN BELOW. PLS MAKE ITS ENTRY IN THE DATABASE AS WELL DEFINE NEW NAMES TO IT-->	
+ <td>
+	<div class="col-md-12">
+	 <select class="form-control 68select" name = "q6n">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-----------------END--------------------> 	
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 32select" name = "q65">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+	<td>
+	<div class="col-md-12">
+
+	 <select class="form-control 80select" name = "q66">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+  </tr>
+  <tr>
+    <td>6.7</td>
+    <td>Ability to hold student's attention &amp; command of class <br></td>
+    <td>
+	<div class="col-md-12">
+           
+	 <select class="form-control 33select" name = "q71">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 34select" name = "q72">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 35select" name = "q73">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 36select" name = "q74">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+	<!-- NEW DROPDOWN BELOW. PLS MAKE ITS ENTRY IN THE DATABASE AS WELL DEFINE NEW NAMES TO IT-->	
+ <td>
+	<div class="col-md-12">
+	 <select class="form-control 69select" name = "q7n">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-----------------END--------------------> 	
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 37select" name = "q75">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+	<td>
+	<div class="col-md-12">
+
+	 <select class="form-control 81select" name = "q76">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+  </tr>
+  <tr>
+    <td>6.8</td>
+    <td>Effective utilization of lecture/practical time for teaching<br></td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 38select" name = "q81">
+
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 39select" name = "q82">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 40select" name = "q83">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 41select" name = "q84">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-- NEW DROPDOWN BELOW. PLS MAKE ITS ENTRY IN THE DATABASE AS WELL DEFINE NEW NAMES TO IT-->	
+ <td>
+	<div class="col-md-12">
+	 <select class="form-control 70select" name = "q8n">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-----------------END--------------------> 	
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 42select" name = "q85">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+	<td>
+	<div class="col-md-12">
+
+	 <select class="form-control 82select" name = "q86">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+  </tr>
+  <tr>
+    <td>6.9</td>
+    <td>Ability to invoke participation &amp; cultivation of learning <br>habits<br></td>
+   <td>
+	<div class="col-md-12">
+	 <select class="form-control 43select" name = "q91">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 44select" name = "q92">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 45select" name = "q93">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 46select" name = "q94">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+	<!-- NEW DROPDOWN BELOW. PLS MAKE ITS ENTRY IN THE DATABASE AS WELL DEFINE NEW NAMES TO IT-->	
+ <td>
+	<div class="col-md-12">
+	 <select class="form-control 71select" name = "q9n">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-----------------END--------------------> 	
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 47select" name = "q95">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+	<td>
+	<div class="col-md-12">
+
+	 <select class="form-control 83select" name = "q96">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+  </tr>
+  <tr>
+    <td>6.10</td>
+    <td>Syllabus Coverage<br></td>
+    <td>
+	<div class="col-md-12">
+
+	 <select class="form-control 48select" name = "q101">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 49select" name = "q102">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 50select" name = "q103">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 51select" name = "q104">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-- NEW DROPDOWN BELOW. PLS MAKE ITS ENTRY IN THE DATABASE AS WELL DEFINE NEW NAMES TO IT-->	
+ <td>
+	<div class="col-md-12">
+	 <select class="form-control 72select" name = "q10n">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-----------------END--------------------> 	
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 52select" name = "q105">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+	<td>
+	<div class="col-md-12">
+
+	 <select class="form-control 84select" name = "q106">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+  </tr>
+  <tr>
+    <td>6.11</td>
+    <td>Faculty involvement with students<br>a) Guidance for developing writing skill viz. experiments,<br>assignments, examination paper, revision, question bank etc.<br>b) Involvement of teacher with students through projects/ <br>student seminars / case material . knowledge sharing<br></td>
+    <td>
+	<div class="col-md-12">
+
+	 <select class="form-control 53select" name = "q111">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 54select" name = "q112">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 55select" name = "q113">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 56select" name = "q114">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-- NEW DROPDOWN BELOW. PLS MAKE ITS ENTRY IN THE DATABASE AS WELL DEFINE NEW NAMES TO IT-->	
+ <td>
+	<div class="col-md-12">
+	 <select class="form-control 73select" name = "q11n">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-----------------END--------------------> 	
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 57select" name = "q115">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+	<td>
+	<div class="col-md-12">
+
+	 <select class="form-control 85select" name = "q116">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+  </tr>
+  <tr>
+    <td>6.12</td>
+    <td>Rapport with students, Counseling/ Guidance<br></td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 58select" name = "q121">
+     
+
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 59select" name = "q122">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 60select" name = "q123">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 61select" name = "q124">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-- NEW DROPDOWN BELOW. PLS MAKE ITS ENTRY IN THE DATABASE AS WELL DEFINE NEW NAMES TO IT-->	
+ <td>
+	<div class="col-md-12">
+	 <select class="form-control 74select" name = "q12n">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+<!-----------------END--------------------> 	
+    <td>
+	<div class="col-md-12">
+	 <select class="form-control 62select" name = "q125">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+	<td>
+	<div class="col-md-12">
+
+	 <select class="form-control 86select" name = "q126">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+	</td>
+  </tr>
+ </tbody>
+</table>
+								  </div> 
+							    <div class="row" id = "options" >
+									<div class="col-md-12 text-center" id = "left">
+											<input type = "submit" class="btn btn-default btn-lg">
+									</div>
+								</div>
+						</form>		    
+					</div>  
+				</div>
+			</div>
+	<br>
+		<br>
+	</div>
+			
+    </section>
+
+    <footer class="text-center">
+       
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Powered by <a href="http://cloudclovis.com/" target="_blank" style="text-decoration:none">CloudClovis</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+
+</body>
+
+</html>

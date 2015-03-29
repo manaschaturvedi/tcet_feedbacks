@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+    <title>TCET Feedback</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/freelancer.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="http://code.highcharts.com/modules/drilldown.js"></script>
+	 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script>
+$(document).ready(function () {
+$('option[value={{clas}}]').attr('selected','selected');
+$('.1select option[value={{roll_no}}]').attr('selected','selected');
+$('.2select option[value={{semester}}]').attr('selected','selected');
+$('.3select option[value={{q11}}]').attr('selected','selected');
+$('.4select option[value={{q12}}]').attr('selected','selected');
+$('.5select option[value={{q13}}]').attr('selected','selected');
+$('.6select option[value={{q14}}]').attr('selected','selected');
+
+$('.7select option[value={{q21}}]').attr('selected','selected');                //check
+$('.8select option[value={{q22}}]').attr('selected','selected');
+$('.9select option[value={{q23}}]').attr('selected','selected');
+$('.10select option[value={{q24}}]').attr('selected','selected');
+$('.11select option[value={{q25}}]').attr('selected','selected');
+$('.12select option[value={{q26}}]').attr('selected','selected');
+
+$('.13select option[value={{q31}}]').attr('selected','selected');
+$('.14select option[value={{q32}}]').attr('selected','selected');
+$('.15select option[value={{q33}}]').attr('selected','selected');
+$('.16select option[value={{q34}}]').attr('selected','selected');
+$('.17select option[value={{q35}}]').attr('selected','selected');
+$('.18select option[value={{q36}}]').attr('selected','selected');
+$('.19select option[value={{q37}}]').attr('selected','selected');
+
+$('.20select option[value={{q41}}]').attr('selected','selected');
+$('.21select option[value={{q42}}]').attr('selected','selected');
+$('.22select option[value={{q43}}]').attr('selected','selected');
+$('.23select option[value={{q44}}]').attr('selected','selected');
+$('.24select option[value={{q45}}]').attr('selected','selected');
+
+$('.25select option[value={{q51}}]').attr('selected','selected');
+$('.26select option[value={{q52}}]').attr('selected','selected');
+$('.27select option[value={{q53}}]').attr('selected','selected');
+$('.28select option[value={{q54}}]').attr('selected','selected');
+$('.29select option[value={{q55}}]').attr('selected','selected');
+$('.30select option[value={{q56}}]').attr('selected','selected');                //check
+$('.31select option[value={{q57}}]').attr('selected','selected');                //check
+$('.32select option[value={{q58}}]').attr('selected','selected');                //check
+//$('.33select option[value={{q64}}]').attr('selected','selected');                //check
+//$('.34select option[value={{q65}}]').attr('selected','selected');                //check
+
+});
+</script>
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top"><b>FEEDBACK</b></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Questionnaire</a>
+                    </li>
+                    
+					
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="container">
+					<div class="intro-text">
+                        <span class="skills">Institutional Feedback 2014</span>
+						<span class="skills">Department of Computer Engineering</span>
+                    </div>
+               
+        </div>
+    </header>
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Questionnaire</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <br>
+			<br>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+                    <h4 style="color:red;">{{error_form}}</h4>
+						<form class="form-horizontal" role="form" method = "post">
+							   <div class="form-group">
+								  <label for="firstname" class="col-sm-1 control-label">Full-Name:</label>
+								  <div class="col-sm-10">
+									 <input type="text" class="form-control" id="firstname" 
+										placeholder="Name Surname" name = "name" value="{{name}}">
+								  </div>
+								</div>
+									
+								<div class="form-group">
+								  <label for="firstname" class="col-sm-1 control-label">Class:</label>
+								  <div class="col-sm-2">
+									 <select class="form-control" name = "clas">
+										<option></option>
+										<option value="SE-A">SE-A</option>
+										<option value="SE-B">SE-B</option>
+										<option value="TE-A">TE-A</option>
+										<option value="TE-B">TE-B</option>
+										<option value="BE-A">BE-A</option>
+										<option value="BE-B">BE-B</option>
+									</select>
+								  </div>
+								  
+								  <label for="firstname" class="col-sm-2 control-label">Roll No:</label>
+								  <div class="col-sm-2">
+								   <select class="form-control 1select" name = "roll_no" value="{{roll_no}}">
+<option value=""> </option>								   
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+<option value="41">41</option>
+<option value="42">42</option>
+<option value="43">43</option>
+<option value="44">44</option>
+<option value="45">45</option>
+<option value="46">46</option>
+<option value="47">47</option>
+<option value="48">48</option>
+<option value="49">49</option>
+<option value="50">50</option>
+<option value="51">51</option>
+<option value="52">52</option>
+<option value="53">53</option>
+<option value="54">54</option>
+<option value="55">55</option>
+<option value="56">56</option>
+<option value="57">57</option>
+<option value="58">58</option>
+<option value="59">59</option>
+<option value="60">60</option>
+<option value="61">61</option>
+<option value="62">62</option>
+<option value="63">63</option>
+<option value="64">64</option>
+<option value="65">65</option>
+<option value="66">66</option>
+<option value="67">67</option>
+<option value="68">68</option>
+<option value="69">69</option>
+<option value="70">70</option>
+<option value="71">71</option>
+<option value="72">72</option>
+<option value="73">73</option>
+<option value="74">74</option>
+<option value="75">75</option>
+<option value="76">76</option>
+<option value="77">77</option>
+<option value="78">78</option>
+<option value="79">79</option>
+<option value="80">80</option>
+<option value="81">81</option>
+<option value="82">82</option>
+<option value="83">83</option>
+<option value="84">84</option>
+<option value="85">85</option>
+<option value="86">86</option>
+<option value="87">87</option>
+<option value="88">88</option>
+<option value="89">89</option>
+									</select>
+									 <!--<input type="text" class="form-control" id="firstname" 
+										placeholder="Enter roll no" name = "title">-->
+								  </div>
+                                  
+                               
+								  
+								  <label for="firstname" class="col-sm-2 control-label">Semester:</label>
+								  <div class="col-sm-2">
+									 <select class="form-control 2select" name = "semester">
+										<option> </option>
+										<option value="3">3</option>
+										<option value="5">5</option>
+										<option value="7">7</option>
+									</select>
+								  </div>
+								</div>
+								<br>
+								<hr>
+									<h4>Please ensure that all fields are filled before submitting your entry.</h4>	
+									<br>
+									<br>
+								  <div class="form-group">
+								  <table class="table table-bordered">
+								  
+<thead>
+ <tr>
+    <th class="col-md-2">Sr. No.</th>
+    <th class="col-md-7">Parameters</th>
+    <th class="col-md-3">Level of Satisfaction (04 - 10)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><b>1</b></td>
+    <td colspan="2"><b>Classroom Condition &nbsp;</b></td>
+  </tr>
+  <tr>
+    <td>1.1</td>
+    <td>Condition of Furniture &amp; Fittings</td>
+    <td>
+<div class="col-md-5">
+	<select class="form-control 3select" name = "q11">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+</td>
+  </tr>
+  <tr>
+    <td>1.2</td>
+    <td>Lighting</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 4select" name = "q12">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>1.3</td>
+    <td>Air Ventilation</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 5select" name = "q13">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>1.4</td>
+    <td>Cleanliness</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 6select" name = "q14">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td><b>2</b></td>
+    <td colspan="2"><b>Laboratories</b></td>
+  </tr>
+  <tr>
+    <td>2.1</td>
+    <td>Equipment Availability</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 7select" name = "q21">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>2.2</td>
+    <td>Software Availability</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 8select" name = "q22">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>2.3</td>
+    <td>Computers Availability</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 9select" name = "q23">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>2.4</td>
+    <td>Overall Lab Maintenance</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 10select" name = "q24">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>2.5</td>
+    <td>Internet Connectivity</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 11select" name = "q25">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>2.6</td>
+    <td>Behaviour of Staff</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 12select" name = "q26">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td><b>3</b></td>
+    <td colspan="2"><b>Library</b></td>
+  </tr>
+  <tr>
+    <td>3.1</td>
+    <td>Availability of Books</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 13select" name = "q31">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>3.2</td>
+    <td>Indexing and stacking</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 14select" name = "q32">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>3.3</td>
+    <td>Condition of books</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 15select" name = "q33">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>3.4</td>
+    <td>Availability of new versions</td>
+    <td>
+<div class="col-md-5">
+	<select class="form-control 16select" name = "q34">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+</td>
+  </tr>
+  <tr>
+    <td>3.5</td>
+    <td>Reading room environment</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 17select" name = "q35">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>3.6</td>
+    <td>Availability of journals/magazines</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 18select" name = "q36">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>3.7</td>
+    <td>Behaviour of staff</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 19select" name = "q37">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td><b>4</b></td>
+    <td colspan="2"><b>Canteen</b></td>
+  </tr>
+  <tr>
+    <td>4.1</td>
+    <td>Hygiene &amp; Cleanliness</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 20select" name = "q41">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>4.2</td>
+    <td>Menu Choices</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 21select" name = "q42">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>4.3</td>
+    <td>Pricing</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 22select" name = "q43">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>4.4</td>
+    <td>Timely Delivery</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 23select" name = "q44">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>4.5</td>
+    <td>Service Quality</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 24select" name = "q45">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td><b>5</b></td>
+    <td colspan="2"><b>Other Facilities/ Amenities</b></td>
+  </tr>
+  <tr>
+    <td>5.1</td>
+    <td>Response of Administrative Staff</td>
+    <td>
+<div class="col-md-5">
+	<select class="form-control 25select" name = "q51">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>5.2</td>
+    <td>Auditorium Availability</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 26select" name = "q52">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>5.3</td>
+    <td>Games &amp; Sports</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 27select" name = "q53">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>5.4</td>
+    <td>Information Display</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 28select" name = "q54">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>5.5</td>
+    <td>Drinking Water</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 29select" name = "q55">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>5.6</td>
+    <td>Toilet Facilities</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 30select" name = "q56">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>5.7</td>
+    <td>Cleanliness</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 31select" name = "q57">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  <tr>
+    <td>5.8</td>
+    <td>Maintenance</td>
+    <td>
+	<div class="col-md-5">
+	<select class="form-control 32select" name = "q58">
+<option value=""> </option>	
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></div>
+	</td>
+  </tr>
+  </tbody>
+</table>
+								  </div> 
+							    <div class="row" id = "options" >
+									<div class="col-md-12 text-center" id = "left">
+											<input type = "submit" class="btn btn-default btn-lg">
+									</div>
+								</div>
+						</form>		    
+					</div>  
+				</div>
+			</div>
+	<br>
+		<br>
+	</div>
+			
+    </section>
+
+    <footer class="text-center">
+       
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Powered by <a href="http://cloudclovis.com/" target="_blank" style="text-decoration:none">CloudClovis</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+
+</body>
+
+</html>

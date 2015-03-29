@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<head><title>Data Visualizations</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/drilldown.js"></script>
+<script src="http://code.highcharts.com/highcharts-3d.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script></head>
+<body>
+	<!--<h2><a href="sample.html">Sample file</a></h2>-->
+	<!--<h1 align="center">The solution to handle Big Data!</h1>
+
+	<div id="result1" style="width:800px; height:400px;">
+
+ <script>
+ $(document).ready(function() {
+    var chart = new Highcharts.Chart(options); 		//new object created
+});
+ // When you initialize the chart using its constructor Highcharts.Chart, the options object is the first parameter you pass.
+var options = {
+    chart: {
+        renderTo: 'result1',        
+        type: 'bar'
+    },
+	title: {
+            text: 'TCET Departmental result breakdown'
+        },
+	/*subtitle:{
+			  text:''
+		},*/
+    xAxis: {
+            categories: ['CMPN', 'EXTC', 'ETRX']
+        },
+    yAxis: {
+            title: {
+                text: 'Overall Sem VI result'
+            }
+        },
+		tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+    series: [{					//series is an array
+        name: 'Below 50%',
+        data: [13, 14, 19]
+    },{
+		name: '51%-60%',
+		data: [32 , 30 , 27]
+	
+	},{
+		name: '61%-70%',
+		data: [64 , 44 , 19]
+	
+	},{
+		name: '71%-80%',
+		data: [48 , 62 , 13]
+	
+	}]
+};
+options.series.push({			
+    name: '81%-90%',
+    data: [4,17,2]
+})
+</script>																				-->
+<!--end of graph-->
+<!--
+// START OF HIGHCHART THEME
+Highcharts.theme = {
+    colors: ['#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', 
+             '#FF9655', '#FFF263', '#6AF9C4'],
+    chart: {
+        backgroundColor: {
+            linearGradient: [0, 0, 500, 500],
+            stops: [
+                [0, 'rgb(255, 255, 255)'],
+                [1, 'rgb(240, 240, 255)']
+            ]
+        },
+    },
+    title: {
+        style: {
+            color: '#000',
+            font: 'bold 16px "Trebuchet MS", Verdana, sans-serif'
+        }
+    },
+    subtitle: {
+        style: {
+            color: '#666666',
+            font: 'bold 12px "Trebuchet MS", Verdana, sans-serif'
+        }
+    },
+
+    legend: {
+        itemStyle: {
+            font: '9pt Trebuchet MS, Verdana, sans-serif',
+            color: 'black'
+        },
+        itemHoverStyle:{
+            color: 'gray'
+        }   
+    }
+};
+
+// Apply the theme
+Highcharts.setOptions(Highcharts.theme);
+</script>-->
+</div>
+
+<h3>Overall feedback Summary</h3>
+	<div id="result5" style="width: 800; height: 600px"></div>	     
+	<script>
+	$(function () {
+        $('#result5').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Overall feedback Summary'
+            },
+           
+            xAxis: {
+                categories: [
+                    'General Awareness, discipline ',
+                    'NBA',
+                    'Ethics in Engg & value education',
+                    'Orientation by Mentor Dean',
+                    'Orientation by HOD',
+                    'Orientation on resources & various facilities expectations from stdnts by Dy HOD',
+                    'Orientation on R&D',
+                    'Class Teacher Orientation',
+                    'Subject Orientation'
+                   
+                ]
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Total sum'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: 'Clarity',
+                data: [{{q1_clarity}}, {{q2_clarity}}, {{q3_clarity}}, {{q4_clarity}}, {{q5_clarity}}, {{q6_clarity}}, {{q7_clarity}}, {{q8_clarity}}, {{q9_clarity}} ]
+    
+            }, {
+                name: 'Utility',
+                data: [{{q1_utility}}, {{q2_utility}}, {{q3_utility}}, {{q4_utility}}, {{q5_utility}}, {{q6_utility}},{{q7_utility}}, {{q8_utility}}, {{q9_utility}}]
+    
+            }, {
+                name: 'Guidance for the academic year',
+                data: [{{q1_guidance}}, {{q2_guidance}}, {{q3_guidance}}, {{q4_guidance}}, {{q5_guidance}}, {{q6_guidance}}, {{q7_guidance}}, {{q8_guidance}}, {{q9_guidance}}]
+    
+            }, {
+                name: 'Process Awareness',
+                data: [{{q1_process}}, {{q2_process}}, {{q3_process}}, {{q4_process}}, {{q5_process}}, {{q6_process}}, {{q7_process}}, 0, 0]
+    
+            }, {
+                name: 'Resources Accessibility',
+                data: [{{q1_resource}}, {{q2_resource}}, {{q3_resource}}, {{q4_resource}}, {{q5_resource}}, {{q6_resource}}, {{q7_resource}}, 0, 0]
+    
+            }, {
+                name: 'Activity Novelty',
+                data: [0, 0, 0, 0, 0, 0, 0, 0, {{q9_activity}}]
+    
+            }, {
+                name: 'Domain/Technology Awareness',
+                data: [0, 0, 0, 0, 0, 0, {{q7_domain}}, {{q8_domain}}, {{q9_domain}}]
+    
+            }]
+        });
+    });
+</script>
+
+<h3>1) General Awareness, Discipline</h3>
+<div id="result66" style="width:800; height: 600px"></div>	
+<script>
+	$(function () {
+        $('#result66').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'General Awareness, Discipline'
+            },
+            xAxis: {
+                categories: [
+                    'Clarity',
+                    'Utility',
+                    'Guidance for the academic year',
+                    'Process Awareness',
+                    'Resources Accessibility',
+                   
+                ]
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Number of votes'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: '4',
+                data: [{{gadq111}},{{gadq121}},{{gadq131}},{{gadq141}},{{gadq151}}]
+    
+            }, {
+                name: '5',
+                data: [{{gadq112}},{{gadq122}},{{gadq132}},{{gadq142}},{{gadq152}}]
+    
+            }, {
+                name: '6',
+                data: [{{gadq113}},{{gadq123}},{{gadq133}},{{gadq143}},{{gadq153}}]
+    
+            }, {
+                name: '7',
+                data: [{{gadq114}},{{gadq124}},{{gadq134}},{{gadq144}},{{gadq154}}]
+    
+            }, {
+                name: '8',
+                data: [{{gadq115}},{{gadq125}},{{gadq135}},{{gadq145}},{{gadq155}}]
+    
+            }, {
+                name: '9',
+                data: [{{gadq116}},{{gadq126}},{{gadq136}},{{gadq146}},{{gadq156}}]
+    
+            }, {
+                name: '10',
+                data: [{{gadq117}},{{gadq127}},{{gadq137}},{{gadq147}},{{gadq157}}]
+    
+            }]
+        });
+    });
+    
+</script>
+	<hr>
+	
+<h3>2) NBA </h3>
+<div id="result67" style="width:800; height: 600px"></div>	
+<script>
+	$(function () {
+        $('#result67').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'NBA'
+            },
+            xAxis: {
+                categories: [
+                    'Clarity',
+                    'Utility',
+                    'Guidance for the academic year',
+                    'Process Awareness',
+                    'Resources Accessibility',
+                   
+                ]
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Number of votes'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: '4',
+                data: [{{nbaq111}},{{nbaq121}},{{nbaq131}},{{nbaq141}},{{nbaq151}}]
+    
+            }, {
+                name: '5',
+                data: [{{nbaq112}},{{nbaq122}},{{nbaq132}},{{nbaq142}},{{nbaq152}}]
+    
+            }, {
+                name: '6',
+                data: [{{nbaq113}},{{nbaq123}},{{nbaq133}},{{nbaq143}},{{nbaq153}}]
+    
+            }, {
+                name: '7',
+                data: [{{nbaq114}},{{nbaq124}},{{nbaq134}},{{nbaq144}},{{nbaq154}}]
+    
+            }, {
+                name: '8',
+                data: [{{nbaq115}},{{nbaq125}},{{nbaq135}},{{nbaq145}},{{nbaq155}}]
+    
+            }, {
+                name: '9',
+                data: [{{nbaq116}},{{nbaq126}},{{nbaq136}},{{nbaq146}},{{nbaq156}}]
+    
+            }, {
+                name: '10',
+                data: [{{nbaq117}},{{nbaq127}},{{nbaq137}},{{nbaq147}},{{nbaq157}}]
+    
+            }]
+        });
+    });
+    
+</script>
+	<hr>
+	
+<h3>3) Seminar on Ethics in Engineering and value education</h3>
+<div id="result68" style="width:800; height: 600px"></div>	
+<script>
+	$(function () {
+        $('#result68').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Seminar on Ethics in Engineering and value education'
+            },
+            xAxis: {
+                categories: [
+                    'Clarity',
+                    'Utility',
+                    'Guidance for the academic year',
+                    'Process Awareness',
+                    'Resources Accessibility',
+                   
+                ]
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Number of votes'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: '4',
+                data: [{{soeie111}},{{soeie121}},{{soeie131}},{{soeie141}},{{soeie151}}]
+    
+            }, {
+                name: '5',
+                data: [{{soeie112}},{{soeie122}},{{soeie132}},{{soeie142}},{{soeie152}}]
+    
+            }, {
+                name: '6',
+                data: [{{soeie113}},{{soeie123}},{{soeie133}},{{soeie143}},{{soeie153}}]
+    
+            }, {
+                name: '7',
+                data: [{{soeie114}},{{soeie124}},{{soeie134}},{{soeie144}},{{soeie154}}]
+    
+            }, {
+                name: '8',
+                data: [{{soeie115}},{{soeie125}},{{soeie135}},{{soeie145}},{{soeie155}}]
+    
+            }, {
+                name: '9',
+                data: [{{soeie116}},{{soeie126}},{{soeie136}},{{soeie146}},{{soeie156}}]
+    
+            }, {
+                name: '10',
+                data: [{{soeie117}},{{soeie127}},{{soeie137}},{{soeie147}},{{soeie157}}]
+    
+            }]
+        });
+    });
+    
+</script>
+	<hr>
+	
+<h3>4) Orientation by Mentor Dean</h3>
+<div id="result69" style="width:800; height: 600px"></div>	
+<script>
+	$(function () {
+        $('#result69').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Orientation by Mentor Dean'
+            },
+            xAxis: {
+                categories: [
+                    'Clarity',
+                    'Utility',
+                    'Guidance for the academic year',
+                    'Process Awareness',
+                    'Resources Accessibility',
+                   
+                ]
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Number of votes'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: '4',
+                data: [{{obmd111}},{{obmd121}},{{obmd131}},{{obmd141}},{{obmd151}}]
+    
+            }, {
+                name: '5',
+                data: [{{obmd112}},{{obmd122}},{{obmd132}},{{obmd142}},{{obmd152}}]
+    
+            }, {
+                name: '6',
+                data: [{{obmd113}},{{obmd123}},{{obmd133}},{{obmd143}},{{obmd153}}]
+    
+            }, {
+                name: '7',
+                data: [{{obmd114}},{{obmd124}},{{obmd134}},{{obmd144}},{{obmd154}}]
+    
+            }, {
+                name: '8',
+                data: [{{obmd115}},{{obmd125}},{{obmd135}},{{obmd145}},{{obmd155}}]
+    
+            }, {
+                name: '9',
+                data: [{{obmd116}},{{obmd126}},{{obmd136}},{{obmd146}},{{obmd156}}]
+    
+            }, {
+                name: '10',
+                data: [{{obmd117}},{{obmd127}},{{obmd137}},{{obmd147}},{{obmd157}}]
+    
+            }]
+        });
+    });
+    
+</script>
+	<hr>
+	
+<h3>5) Orientation by Head Of Department</h3>
+<div id="result70" style="width:800; height: 600px"></div>	
+<script>
+	$(function () {
+        $('#result70').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Orientation by Head Of Department'
+            },
+            xAxis: {
+                categories: [
+                    'Clarity',
+                    'Utility',
+                    'Guidance for the academic year',
+                    'Process Awareness',
+                    'Resources Accessibility',
+                   
+                ]
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Number of votes'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+                        series: [{
+                name: '4',
+                data: [{{obhod111}},{{obhod121}},{{obhod131}},{{obhod141}},{{obhod151}}]
+    
+            }, {
+                name: '5',
+                data: [{{obhod112}},{{obhod122}},{{obhod132}},{{obhod142}},{{obhod152}}]
+    
+            }, {
+                name: '6',
+                data: [{{obhod113}},{{obhod123}},{{obhod133}},{{obhod143}},{{obhod153}}]
+    
+            }, {
+                name: '7',
+                data: [{{obhod114}},{{obhod124}},{{obhod134}},{{obhod144}},{{obhod154}}]
+    
+            }, {
+                name: '8',
+                data: [{{obhod115}},{{obhod125}},{{obhod135}},{{obhod145}},{{obhod155}}]
+    
+            }, {
+                name: '9',
+                data: [{{obhod116}},{{obhod126}},{{obhod136}},{{obhod146}},{{obhod156}}]
+    
+            }, {
+                name: '10',
+                data: [{{obhod117}},{{obhod127}},{{obhod137}},{{obhod147}},{{obhod157}}]
+    
+            }]
+        });
+    });
+    
+</script>
+
+	<hr>
+	
+<h3>6) Orientation on resources & various facilities expectations from students by Dy HOD</h3>
+<div id="result72" style="width:800; height: 600px"></div>	
+<script>
+	$(function () {
+        $('#result72').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Orientation on resources & various facilities expections from stdnts by Dy HOD'
+            },
+            xAxis: {
+                categories: [
+                    'Clarity',
+                    'Utility',
+                    'Guidance for the academic year',
+                    'Process Awareness',
+                    'Resources Accessibility',
+                   
+                ]
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Number of votes'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+                        series: [{
+                name: '4',
+                data: [{{oorav111}},{{oorav121}},{{oorav131}},{{oorav141}},{{oorav151}}]
+    
+            }, {
+                name: '5',
+                data: [{{oorav112}},{{oorav122}},{{oorav132}},{{oorav142}},{{oorav152}}]
+    
+            }, {
+                name: '6',
+                data: [{{oorav113}},{{oorav123}},{{oorav133}},{{oorav143}},{{oorav153}}]
+    
+            }, {
+                name: '7',
+                data: [{{oorav114}},{{oorav124}},{{oorav134}},{{oorav144}},{{oorav154}}]
+    
+            }, {
+                name: '8',
+                data: [{{oorav115}},{{oorav125}},{{oorav135}},{{oorav145}},{{oorav155}}]
+    
+            }, {
+                name: '9',
+                data: [{{oorav116}},{{oorav126}},{{oorav136}},{{oorav146}},{{oorav156}}]
+    
+            }, {
+                name: '10',
+                data: [{{oorav117}},{{oorav127}},{{oorav137}},{{oorav147}},{{oorav157}}]
+    
+            }]
+        });
+    });
+    
+</script>
+	<hr>
+	
+<h3>7) Orientation on R&D</h3>
+<div id="result73" style="width:800; height: 600px"></div>	
+<script>
+	$(function () {
+        $('#result73').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Orientation on R&D'
+            },
+            xAxis: {
+                categories: [
+                    'Clarity',
+                    'Utility',
+                    'Guidance for the academic year',
+                    'Process Awareness',
+                    'Resources Accessibility',
+                    'Domain/Technology Awareness'
+                   
+                ]
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Number of votes'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: '4',
+                data: [{{oorad111}},{{oorad121}},{{oorad131}},{{oorad141}},{{oorad151}},{{oorad171}}]
+    
+            }, {
+                name: '5',
+                data: [{{oorad112}},{{oorad122}},{{oorad132}},{{oorad142}},{{oorad152}},{{oorad172}}]
+    
+            }, {
+                name: '6',
+                data: [{{oorad113}},{{oorad123}},{{oorad133}},{{oorad143}},{{oorad153}},{{oorad173}}]
+    
+            }, {
+                name: '7',
+                data: [{{oorad114}},{{oorad124}},{{oorad134}},{{oorad144}},{{oorad154}},{{oorad174}}]
+    
+            }, {
+                name: '8',
+                data: [{{oorad115}},{{oorad125}},{{oorad135}},{{oorad145}},{{oorad155}},{{oorad175}}]
+    
+            }, {
+                name: '9',
+                data: [{{oorad116}},{{oorad126}},{{oorad136}},{{oorad146}},{{oorad156}},{{oorad176}}]
+    
+            }, {
+                name: '10',
+                data: [{{oorad117}},{{oorad127}},{{oorad137}},{{oorad147}},{{oorad157}},{{oorad177}}]
+    
+            }]
+        });
+    });
+    
+</script>
+	<hr>
+	
+<h3>8) Class In-charge Orientation</h3>
+<div id="result74" style="width:800; height: 600px"></div>	
+<script>
+	$(function () {
+        $('#result74').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Class In-charge Orientation'
+            },
+            xAxis: {
+                categories: [
+                    'Clarity',
+                    'Utility',
+                    'Guidance for the academic year',
+                    'Domain/Technology Awareness'
+                   
+                ]
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Number of votes'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+             series: [{
+                name: '4',
+                data: [{{cico111}},{{cico121}},{{cico131}},{{cico141}}]
+    
+            }, {
+                name: '5',
+                data: [{{cico112}},{{cico122}},{{cico132}},{{cico142}}]
+    
+            }, {
+                name: '6',
+                data: [{{cico113}},{{cico123}},{{cico133}},{{cico143}}]
+    
+            }, {
+                name: '7',
+                data: [{{cico114}},{{cico124}},{{cico134}},{{cico144}}]
+    
+            }, {
+                name: '8',
+                data: [{{cico115}},{{cico125}},{{cico35}},{{cico145}}]
+    
+            }, {
+                name: '9',
+                data: [{{cico116}},{{cico126}},{{cico136}},{{cico146}}]
+    
+            }, {
+                name: '10',
+                data: [{{cico117}},{{cico127}},{{cico137}},{{cico147}}]
+    
+            }]
+        });
+    });
+    
+</script>
+	<hr>
+	
+<h3>9) Subject Orientation</h3>
+<div id="result75" style="width:800; height: 600px"></div>	
+<script>
+	$(function () {
+        $('#result75').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Subject Orientation'
+            },
+            xAxis: {
+                categories: [
+                    'Clarity',
+                    'Utility',
+                    'Guidance for the academic year',
+                    'Activity Novelty',
+                    'Domain/Technology Awareness'
+                   
+                ]
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Number of votes'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: '4',
+                data: [{{so111}},{{so121}},{{so131}},{{so141}},{{so151}}]
+    
+            }, {
+                name: '5',
+                data: [{{so112}},{{so122}},{{so132}},{{so142}},{{so152}}]
+    
+            }, {
+                name: '6',
+                data: [{{so113}},{{so123}},{{so133}},{{so143}},{{so153}}]
+    
+            }, {
+                name: '7',
+                data: [{{so114}},{{so124}},{{so134}},{{so144}},{{so154}}]
+    
+            }, {
+                name: '8',
+                data: [{{so115}},{{so125}},{{so35}},{{so145}},{{so155}}]
+    
+            }, {
+                name: '9',
+                data: [{{so116}},{{so126}},{{so136}},{{so146}},{{so156}}]
+    
+            }, {
+                name: '10',
+                data: [{{so117}},{{so127}},{{so137}},{{so147}},{{so157}}]
+    
+            }]
+        });
+    });
+    
+</script>
+<!--
+<h3>3)Drill down representation using Column chart!</h3>
+<div id="container2" style="width:65%; height: 400px;"></div>
+<script>
+$(function () {   
+
+    // Create the chart
+    $('#container2').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'TCET department drilldown'
+        },
+		subtitle:{
+			text:'Click on the columns for more details'
+		
+		},
+		tooltip: {
+			backgroundColor: '#FCFFC5',
+			borderColor: 'black',
+			borderRadius: 10,
+			borderWidth: 3
+			},
+        xAxis: {
+            type: 'category'
+        },
+		yAxis: { //--- Primary yAxis
+			title: {
+				text: 'No. of faculties'
+			}
+			},
+
+        legend: {
+            enabled: false
+        },
+
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                }
+            }
+        },
+
+        series: [{
+            name: 'No. of faculties',
+            colorByPoint: true,
+            data: [{
+                name: 'CMPN',
+                y: 27,
+                drilldown: 'cmpn'
+            }, {
+                name: 'IT',
+                y: 26,
+                drilldown: 'it'
+            }, {
+                name: 'EXTC',
+                y: 27,
+                drilldown: 'extc'
+            }, {
+                name: 'ETRX',
+                y: 14,
+                drilldown: 'etrx'
+            }, {
+                name: 'MECH',
+                y: 9,
+                drilldown: 'mech'
+            }]
+        }],
+        drilldown: {
+		
+            series: [{
+                id: 'cmpn',
+                data: [
+                    ['ME', 14],
+                    ['P.ME', 4],
+                    ['PHD', 3],
+                    ['P.PHD', 6]
+                ]
+            }, {
+                id: 'it',
+                data: [
+                    ['ME', 11],
+                    ['P.ME', 7],
+                    ['PHD', 2],
+                    ['P.PHD', 6]
+                ]
+            }, {
+                id: 'extc',
+                data: [
+                    ['ME', 13],
+                    ['P.ME', 6],
+                    ['PHD', 3],
+                    ['P.PHD', 5]
+                ]
+            }, {
+                id: 'etrx',
+                data: [
+                    ['ME', 8],
+                    ['P.ME', 3],
+                    ['PHD', 2],
+                    ['P.PHD', 1]
+                ]
+            }, {
+                id: 'mech',
+                data: [
+                    ['ME', 6],
+                    ['P.ME', 1],
+                    ['PHD', 0],
+                    ['P.PHD', 2]
+               ]
+            }]
+        }
+    })
+});
+</script>  
+<h3>4)Representation using Column chart!</h3>
+																									 
+<div id="result2" style="width:65%; height: 400px"></div>  
+
+
+<script type="text/javascript">   
+$(function () {   
+
+    // Create the chart
+    $('#result2').highcharts({                        
+         chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Passing percentage of each department'
+        },
+		
+        xAxis: {
+            type: 'category'
+        },
+		yAxis: { //--- Primary yAxis
+			title: {
+				text: 'No. of Papers published'
+			}
+			},
+
+        legend: {
+            enabled: false
+        },
+
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                }
+            }
+        },
+
+        series: [{
+            name: 'Passing percentage',
+            colorByPoint: true,
+            data: [{
+                name: 'CMPN',
+                y: 95.03,
+               
+            },{
+                name: 'EXTC',
+                y: 87.71,
+                
+            }, {
+                name: 'ETRX',
+                y: 71.25,
+               
+            }]
+        }]
+
+    })
+});
+</script>
+
+<h3>5)Representation using Column chart!</h3>
+
+<div id="container4" style="width:65%; height: 400px"></div>
+<script type="text/javascript">
+$(function () {   
+
+    // Create the chart
+    $('#container4').highcharts({
+         chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Cumulative years of experience in each depratment'
+        },
+		/*subtitle:{
+			text:'Click on the columns for more details'
+		
+		},
+		tooltip: {
+			backgroundColor: '#FCFFC5',
+			borderColor: 'black',
+			borderRadius: 10,
+			borderWidth: 3
+			},*/
+        xAxis: {
+            type: 'category'
+        },
+		yAxis: { //--- Primary yAxis
+			title: {
+				text: 'Years of experience'
+			}
+			},
+
+        legend: {
+            enabled: false
+        },
+
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                }
+            }
+        },
+
+        series: [{
+            name: 'Years of experience',
+            colorByPoint: true,
+            data: [{
+                name: 'CMPN',
+                y: 241,
+               
+            }, {
+                name: 'IT',
+                y: 203,
+                
+            }, {
+                name: 'EXTC',
+                y: 302,
+                
+            }, {
+                name: 'ETRX',
+                y: 144.5,
+               
+            }, {
+                name: 'MECH',
+                y: 71,
+               
+            }]
+        }]
+
+    })
+});
+</script>
+<h3>6)Representation using pie chart!</h3>
+
+<div id="container5" style="width: 50%; height: 400px"></div>	
+	<script>
+	$(function () {
+    $('#container5').highcharts({
+        chart: {
+            type: 'pie',
+            options3d: {
+				enabled: true,
+                alpha: 45,
+                beta: 0,
+               
+            }
+        },
+        title: {
+            text: 'Faculty strength in each department'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                depth: 35,
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}'
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'faculty strength',
+            data: [
+                ['CMPN',   26.21],
+                ['IT',       25.24],
+                {
+                    name: 'EXTC',
+                    y: 26.21,
+                    sliced: true,
+                    selected: true
+                },
+                ['ETRX',    13.59],
+                ['MECH',     8.73]
+            ]
+        }]
+    });
+});
+</script>
+
+<h3>7)Representation using column chart!</h3>
+	<div id="result4" style="width: 50%; height: 400px"></div>	      
+
+	<script>
+	$(function () {
+        $('#result4').highcharts({                                     
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Gender based exam performance'
+            },
+            xAxis: {
+                categories: [
+                    'CMPN',
+                    'EXTC',
+                    'ETRX'
+                ]
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Passing percentage'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: 'Boys',
+                data: [92.45, 85,74.57]
+    
+            }, {
+                name: 'Girls',
+                data: [100, 94.44,66.66]
+    
+            }]
+        });
+    });
+    
+</script>
+
+<h3>2) A Line chart representation of data.</h3>
+<div id="container1" style="width:65%; height: 400px"></div>
+<script>
+
+$(function () {
+    $('#container1').highcharts({
+        title: {
+            text: 'Death by rail accidents over the decade'
+        },
+
+        subtitle: {
+            text: 'This chart is a responsive'
+        },
+        
+        yAxis:{
+				title: {
+                text: 'Number of people'
+            }
+			},
+			// Enable for both axes
+		tooltip: {
+				crosshairs: [true,true]
+		
+		},
+        xAxis: { 
+			
+            categories: [2002,2003,2004,2005,2006,2007,2008,2009,2010,2011]
+        },
+        
+        series:[{
+            data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 130.6, 148.5, 216.4, 134.1]        
+        }]
+    });
+});
+</script>	
+                 -->
+
+</body>
+</html>
